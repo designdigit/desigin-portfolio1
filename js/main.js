@@ -5,30 +5,30 @@ window.addEventListener("load", function(){
 	let gnb=document.querySelector(".gnb");
 	let gnbList=gnb.children;
 
-	let desktopFlag;
+let desktopFlag;
 
-	function checkWindowSize(){
-		let winw=window.innerWidth;
+function checkWindowSize(){
+	let winw=window.innerWidth;
 
-		if(winw >= 1240){
-			desktopFlag=true;
-		}
-		else{
-			desktopFlag=false;
-		}
-
-		if(header.classList.contains("menu-open")){
-			header.classList.remove("menu-open");
-		}
-
-		Array.from(gnbList).forEach(function(item){
-			if(item.classList.contains("open")){
-				item.classList.remove("open");
-			}
-		});
+	if(winw >= 1240){
+		desktopFlag=true;
+	}
+	else{
+		desktopFlag=false;
 	}
 
-	checkWindowSize();
+	if(header.classList.contains("menu-open")){
+		header.classList.remove("menu-open");
+	}
+
+	Array.from(gnbList).forEach(function(item){
+		if(item.classList.contains("open")){
+			item.classList.remove("open");
+		}
+	});
+}
+
+checkWindowSize();
 
 	menuTab.addEventListener("click", function(e){
 		e.preventDefault();
