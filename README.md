@@ -14,6 +14,8 @@
 
 > [https://designdigit.github.io/desigin-portfolio1](https://designdigit.github.io/desigin-portfolio1)
 
+![image](https://designdigit.github.io/desigin-portfolio1/presentation/main.jpg)
+
 <br>
 
 ## JavaScript
